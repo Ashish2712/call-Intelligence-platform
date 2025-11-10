@@ -71,7 +71,7 @@ This project covers all **Databricks Data Engineer Professional** exam domains:
 ---
 
 ## 📁 Repository Structure
-
+```
 📦 call-intelligence-platform/
 ├── architecture/
 │ ├── high_level_architecture.png
@@ -103,3 +103,4 @@ This project covers all **Databricks Data Engineer Professional** exam domains:
 │ └── integration/
 │ └── test_pipeline_end_to_end.py
 └── README.md
+```
