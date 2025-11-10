@@ -1,4 +1,5 @@
 # 📞 Call Intelligence Platform
+
 ### 🚀 Scalable Call Center Transcript Analytics using Azure Databricks, Delta Lake, and Power Apps
 
 ![Azure Databricks](https://img.shields.io/badge/Azure-Databricks-blue?logo=databricks&logoColor=white)
@@ -22,17 +23,18 @@ This project is designed and implemented as part of the **Databricks Certified D
 
 ### 🔹 High-Level Flow
 
-1. **Ingest:** Transcripts streamed into **Azure Data Lake Storage Gen2**  
-2. **Enrich:** CRM details joined using **Databricks Delta Lake (Silver layer)**  
-3. **Analyze:** Key phrase extraction via **Azure Cognitive Services (NLP)**  
-4. **Store:** Results stored in **Delta Gold layer**  
-5. **Serve:** Insights consumed by **Power Apps** for reviewer assignment  
+1. **Ingest:** Transcripts streamed into **Azure Data Lake Storage Gen2**
+2. **Enrich:** CRM details joined using **Databricks Delta Lake (Silver layer)**
+3. **Analyze:** Key phrase extraction via **Azure Cognitive Services (NLP)**
+4. **Store:** Results stored in **Delta Gold layer**
+5. **Serve:** Insights consumed by **Power Apps** for reviewer assignment
 6. **Secure:** Role-based access and governance via **Azure AD + Unity Catalog**
 
 ---
 
 ### 🧱 Architecture Diagram
-*(replace this placeholder with your actual diagram in `/architecture/high_level_architecture.png`)*
+
+_(replace this placeholder with your actual diagram in `/architecture/high_level_architecture.png`)_
 
 ![Architecture Diagram](architecture/high_level_architecture.png)
 
@@ -40,14 +42,14 @@ This project is designed and implemented as part of the **Databricks Certified D
 
 ## 🧩 Key Components
 
-| Layer | Description | Technology Stack |
-|--------|--------------|------------------|
-| **Ingestion (Bronze)** | Incremental ingestion of transcripts using Auto Loader | Azure Data Lake, Databricks Auto Loader |
-| **Transformation (Silver)** | Merge CRM data, schema evolution, data cleaning | Delta Lake, PySpark |
-| **Analytics (Gold)** | NLP enrichment, key phrase extraction, sentiment scoring | Azure Cognitive Services, Databricks |
-| **Serving Layer** | Data consumed by Power Apps & Power BI | Dataverse, Synapse Serverless, Power Platform |
-| **Security & Governance** | AAD-based RBAC, Unity Catalog permissions | Azure Active Directory, Databricks Unity Catalog |
-| **Orchestration** | Pipeline automation & job scheduling | Databricks Workflows / Azure Data Factory |
+| Layer                       | Description                                              | Technology Stack                                 |
+| --------------------------- | -------------------------------------------------------- | ------------------------------------------------ |
+| **Ingestion (Bronze)**      | Incremental ingestion of transcripts using Auto Loader   | Azure Data Lake, Databricks Auto Loader          |
+| **Transformation (Silver)** | Merge CRM data, schema evolution, data cleaning          | Delta Lake, PySpark                              |
+| **Analytics (Gold)**        | NLP enrichment, key phrase extraction, sentiment scoring | Azure Cognitive Services, Databricks             |
+| **Serving Layer**           | Data consumed by Power Apps & Power BI                   | Dataverse, Synapse Serverless, Power Platform    |
+| **Security & Governance**   | AAD-based RBAC, Unity Catalog permissions                | Azure Active Directory, Databricks Unity Catalog |
+| **Orchestration**           | Pipeline automation & job scheduling                     | Databricks Workflows / Azure Data Factory        |
 
 ---
 
@@ -55,16 +57,16 @@ This project is designed and implemented as part of the **Databricks Certified D
 
 This project covers all **Databricks Data Engineer Professional** exam domains:
 
-| Certification Domain | Implementation Example |
-|-----------------------|------------------------|
-| Data Ingestion | Auto Loader streaming pipelines |
-| Transformation & Enrichment | Bronze → Silver → Gold Delta pipelines |
-| Performance Optimization | Caching, ZORDER, partitioning, broadcast joins |
-| Data Governance | Unity Catalog + AAD passthrough |
-| Streaming | Incremental ingestion via Event Hub / Auto Loader |
-| Orchestration | Databricks Jobs JSON workflow |
-| Data Quality | Schema validation, Delta constraints |
-| Deployment | Job clusters, Git integration, Power Apps frontend |
+| Certification Domain        | Implementation Example                             |
+| --------------------------- | -------------------------------------------------- |
+| Data Ingestion              | Auto Loader streaming pipelines                    |
+| Transformation & Enrichment | Bronze → Silver → Gold Delta pipelines             |
+| Performance Optimization    | Caching, ZORDER, partitioning, broadcast joins     |
+| Data Governance             | Unity Catalog + AAD passthrough                    |
+| Streaming                   | Incremental ingestion via Event Hub / Auto Loader  |
+| Orchestration               | Databricks Jobs JSON workflow                      |
+| Data Quality                | Schema validation, Delta constraints               |
+| Deployment                  | Job clusters, Git integration, Power Apps frontend |
 
 ---
 
@@ -100,4 +102,4 @@ This project covers all **Databricks Data Engineer Professional** exam domains:
 │ │ └── test_data_transformation.py
 │ └── integration/
 │ └── test_pipeline_end_to_end.py
-└── README.md  
+└── README.md
