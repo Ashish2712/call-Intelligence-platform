@@ -1,0 +1,14 @@
+[
+  {
+    "call_id": "C123",
+    "caller_id": "U567",
+    "timestamp": "2025-11-08T09:12:00Z",
+    "transcript": "The delivery was late and the product was damaged."
+  },
+  {
+    "call_id": "C124",
+    "caller_id": "U568",
+    "timestamp": "2025-11-08T09:25:00Z",
+    "transcript": "Customer wants to know about refund status."
+  }
+]
