@@ -84,6 +84,6 @@ print("✅ Added Delta table constraint: valid_sentiment")
 # STEP 5: Audit Table Metadata
 # ------------------------------------------------------------
 table_details = spark.sql(f"DESCRIBE HISTORY {catalog_name}.{schema_name}.{table_name}")
-display(table_details)
+# display(table_details)
 
 print("✅ Governance setup and quality checks complete.")
